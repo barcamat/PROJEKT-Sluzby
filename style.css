@@ -1,0 +1,237 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    font: 16px/1.5 "Montserrat";
+    color: #8B8B8B;
+    margin:0;
+}
+
+.box {
+    width: 500px;
+    margin: 0px auto;
+}
+/**************===HORNÍ OBRÁZEK=== **************/
+.img-happy-traveler img {
+    margin: 60px 75px 39px 75px;
+    width: 350px;
+    height: 291px;
+}
+
+/***************=== NADPIS A POPIS===*************/
+.headline h1 {
+    font: 28px/0 'Montserrat';
+    font-weight: 900;
+    color:black;
+    text-align: center;
+    margin:0;
+    margin-bottom: 30px;
+}
+.underline {
+    width: 60px;
+    border-bottom: 3px solid #407BFF;
+    margin: 0px 220px 30px 220px;
+}
+.headline p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 20px;
+}
+/************===TLAČÍTKA===**************/
+.button1 {
+    background-color:#407BFF;
+    padding: 11px 30px;
+    margin: 30px 152px 10px 152px;
+    border-radius: 25px;
+   
+}
+.button1 a,
+.button2 a{
+    text-decoration: none;
+    font-size: 14px;
+    color:white;
+    font-weight: 500;
+}
+.button2 {
+    background-color:#8B8B8B;
+    padding: 11px 30px;
+    margin: 0px 137px 0px 137px;
+    border-radius: 25px;
+}
+/****************===SLUŽBY KANCELÁŘE===***********/
+.agency-services h2 {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin: 60px 0 15px 0;
+}
+.agency-services p {
+    text-align: center;
+    margin: 0 20px;
+}
+.services-flex {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    height:80px;
+    font-size: 13px;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.services-flex img {
+    height: 40px;
+    width:45px;
+}
+.flex2 {
+    margin: 15px 20px;
+}
+.flex3 {
+    margin-bottom: 57px;
+}
+
+/**************************************MEDIA QUERIES***************************************/
+@media screen and (min-width: 640px){
+    .box {
+        width: 768px;
+    }
+    /******OBRÁZEK*************/    
+    .img-happy-traveler img {
+        margin: 60px 184px 30px 184px;
+        width: 400px;
+        height: 332px;
+    }
+    /******NADPIS A POPIS*************/   
+    .underline {
+        margin: 0px 354px 30px 354px;
+    }
+    .headline p {
+        margin: 0px 109px;
+    }
+    /**************tlačítka*********/
+    .buttons {
+        display: flex;
+        flex: 0 0 435px;
+        margin: 30px 160px 10px 160px
+    }
+    .button1,
+    .button2 {
+        margin:0;
+        }
+    .button1 {
+        margin-right: 20px;
+    }
+    /***********SLUŽBY***********/
+    .agency-services h2 {
+        margin: 70px 0 17px 0;
+    }
+    .agency-services p {
+        margin: 0 100px;
+    }
+    .services-box {
+        display: flex;
+        flex: 0 0 230px;  
+    }
+    .services-flex {
+        display: flex;
+        flex-direction: column;
+        height: 172px;
+        padding:40px 0 10px 0;
+    }
+    .services-flex p {
+        margin:0 9px;
+    }
+    .flex2 {
+        margin:0;
+    }
+}
+
+@media screen and (min-width:1100px){
+    .box {
+        width: 1200px;
+    }
+    /******===HORNÍ OBRÁZEK a NADPIS, POPIS=== ******/
+    .img-headline-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .headline-buttons {
+        order:0;
+        flex: 0 0 500px;
+    }
+    .img-happy-traveler {
+        order:1;
+        flex: 0 0 490px;
+    }
+    .img-happy-traveler img {
+        margin: 60px 0px 0 60px;
+        width: 426px;
+        height: 354px;
+    }
+    .headline h1 {
+        text-align: left;
+        margin: 133px 0 0 0px;
+    }
+    .underline {
+        width: 60px;
+        margin: 30px 0px 20px 0px;
+    }
+    .headline p {
+        margin: 0;
+        text-align: left;
+    }
+    /**************===TLAČÍTKA=== **************/
+    .buttons {
+        display: flex;
+        margin:30px 0 0 0px;
+    }
+    /*************===SLUŽBY KANCELÁŘE===*********/
+    .ag-ser-flex {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 59px;
+    }
+    .agency-services-description {
+        order:1;
+        flex: 0 0 440px;
+        margin-left: 60px;
+    }
+    .agency-services-description p{
+        text-align: left;
+        margin: 0;
+    }
+    .agency-services h2 {
+        margin: 50px 0 17px 0px;
+        text-align: left;
+    }
+   .services-box {
+        order:0;
+        flex: 0 0 550px;
+        margin: 0 0 0 80px;
+    } 
+   .services-flex {
+        height: 191px;
+        width:170px;
+        margin:0px;
+   }
+   .flex2 {
+        margin-left: 20px;
+        margin-right: 20px;
+   }
+   .agency-services-description-2 p{
+        margin: 0 0 0 80px;
+        text-align: left;
+   }
+   .agency-services-description-2 h2 {
+        text-align: left;
+        margin: 50px 0 17px 80px;
+   }
+   .services-box-2 {
+        margin-left: 0;
+        margin-right: 80px;
+   }
+}
+
+
